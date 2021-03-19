@@ -95,3 +95,9 @@ input[type=text] {
 .error {
   color: rgb(236, 15, 15);
 }
+body {
+  filter: blur(0.02em);
+  mix-blend-mode: multiply;
+  background: url('/images/backgroundBooks.jpg') transparent 50% no-repeat;
+  background-size: cover;
+}
