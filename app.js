@@ -38,7 +38,7 @@ app.use(function (req, res, next) {
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
-
+  console.log('global')
   if (err.status === 404) {
     err.message = 'Apologies, but your page is not here.'
   } else {
@@ -49,7 +49,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500)
-  res.render('error')
+  res.render('page-not-found', err)
 })
 
 module.exports = app
